@@ -1,4 +1,4 @@
-<style>
+
 body {
   background: url("mybackgroundimage.gif") repeat;
 }
@@ -12,7 +12,3 @@ body {
   z-index: -1;
 }
 </style>
-</head>
-<body>
-  <img id="banner" src="mybannerimage.gif" alt="Banner Image"/>
-</body>
