@@ -1,2 +1,2 @@
 dreams
-![]
+![](images/ceo.jpg)
