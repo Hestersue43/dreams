@@ -9,10 +9,6 @@ background: url("mybackgroundimage.gif") repeat;
   flex-flow: row wrap;
 }
 
-.about, .ceo, .contact {
-  width: 100%;
-}
-
 @media (min-width: 600px) {
   .about, .ceo, .contact {
     width: 50%;
