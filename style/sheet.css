@@ -15,7 +15,7 @@ background: url("mybackgroundimage.gif") repeat;
    }
   .main{
     position:relative;
-    min-width:100%;
+    min-width:100px;
   
    }  
 .about{
