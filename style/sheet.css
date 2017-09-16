@@ -20,11 +20,6 @@ background: url("mybackgroundimage.gif") repeat;
 }
 
 @media (min-width: 800px) {
-   .about, .ceo, .contact {
-  }
-}
-
-@media (min-width: 800px) {
   .main {
     width: 800px;
     margin-left: auto;
