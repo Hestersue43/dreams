@@ -10,6 +10,44 @@ text-decoration:none;
 background: url("mybackgroundimage.gif") repeat;
 }
 
+
+.main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.about, .ceo, .contact {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .about, .ceo, .contact {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .about {
+    width: 60%;
+  }
+  .ceo {
+    width: 40%;
+  }
+  .contact {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 #banner {
   position: absolute;
   top: 0px;
