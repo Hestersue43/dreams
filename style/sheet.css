@@ -1,9 +1,3 @@
-html{
-   @media only screen and (max-width: 500px) {
-
- body {
-background: url("mybackgroundimage.gif") repeat;
-}
 
 #banner {
    text-align: center; 
