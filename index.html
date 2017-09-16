@@ -17,11 +17,31 @@
     body {
     background: url("mybackgroundimage.gif") repeat;
      }
-    @media only screen and (max-width: 500px) {
-    body {
-    background: url("mybackgroundimage.gif") repeat;
+  
+   @media screen and (min-width: 40.5em) {
+  .main {
+    width: 50%;
+    float: left;
     }
-    }
+	   
+	   /*Default styles*/
+  .about li {
+  float: left;
+  width: 50%;
+}
+
+/*Display 3 per row for medium displays (like mobile phones in landscape or smaller tablets)*/
+@media screen and (min-width: 28.75em) {
+  .about li {
+  width: 33.3333333%;
+  }
+}
+/*Display 6 to a row for large displays (like medium tablets and up) */
+@media screen and min-width: 40.5em) {
+  .about li {
+   width: 16.6666667%;
+  }
+}
 	   
    header{ background: linear-gradient(#cc2b5e, #753a88); }
    #banner {
