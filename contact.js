@@ -16,7 +16,7 @@ $.ajax ({
 	},
 	cache: false,
 	success function(){
-	$('#success).html ("div class-'alert alert-success'>");
+	$('#success).html ("<div class-'alert alert-success'>");
 	$('#success > .alert-success').html("<button type='button' class= 'close' data-dismiss='alert' aria-hidden='true'>$times ;")
 		.append("</button>");
 	$('#success).alert-success')
@@ -26,7 +26,7 @@ $.ajax ({
 	}
 	
 	error function(){
-	$('#success).html ("div class-'alert alert-danger'>");
+	$('#success).html ("<div class-'alert alert-danger'>");
 	$('#success > .alert-danger').html("<button type='button' class= 'close' data-dismiss='alert' aria-hidden='true'>$times ;")
 		.append("</button>");
 	$('#success).alert-danger').append("<strong>'+ firstName + ", It seems that my mail server is not responding. Please try again later'</strong>");
