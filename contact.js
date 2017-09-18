@@ -1,9 +1,8 @@
-function contactForm(){
+function contact(){
 var firstname=name
 if (firstname.indexOf('') >=0){
 firstname=name.split('').slice(0. -1).join('');
 }	
-}
 
 $.ajax ({
 	url: "//formspree.io/dreams.veldamart@gmail.com",
@@ -41,4 +40,9 @@ $.ajax ({
 filter function(){
 	return $(this).is(":visisble");
 }
+}
+
+
+
+
 
