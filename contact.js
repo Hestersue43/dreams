@@ -1,7 +1,8 @@
-Var firstname=name
+function contactForm(){
+var firstname=name
 if (firstname.indexOf('') >=0){
-	firstname=name.split('').slice(0. -1).join('');
-	
+firstname=name.split('').slice(0. -1).join('');
+}	
 }
 
 $.ajax ({
