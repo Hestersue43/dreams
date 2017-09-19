@@ -28,30 +28,28 @@ s <!Doctype html>
         <h1 style="font-family: Arial; color: #FFFFFF"><span style="font-bold: normal">Contact Us</span></h1>
         <center><p class="lead" style="vertical-align: text-bottom; width:80%; overflow:hidden; color: #FFFFFF; font-family: Arial;">
    </header>
-   <form method="post" action="">
-   <div>
-   <div>
-   <label>Name</label>
-   <input type="text" class="" placeholder="Name" id="name"  required="required">
-   <p class=help-block text-danger</p>
-   </div>
-   </div>
-   <label>Email Address</label>
-   <input type="text" class="" placeholder="Email" id="email" required="required">
-   <p class=help-block text-danger</p>
-   </div>
-   </div>
-   <label>Phone Number</label>
-   <input type="text" class="" placeholder="Phone Number" id="phone" required="required">
-   <p class=help-block text-danger</p>
-   </div>
-   </div>
-   <label>Message</label>
-  <textarea  aria-required="true" cols="40" id="message" name="message" required="required" rows="5" spellcheck="true"></textarea>                                                                                                                               
-   <p class=help-block text-danger</p>
-   </div>
-   </div>
-    <input name = "Submit" type="submit" value="Send Message" onclick="send()"/> 
+   <form action="tryjs_submitpage.htm" onsubmit="return myFunction()">
+    <fieldset class="form-group">
+        <label for="name">Name*:</label>
+        <input type="text" class="form-control" id="usr" placeholder="Name">
+     </fieldset>
+
+     <fieldset class="form-group">
+         <label for="email">Email Address*:</label>
+         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+     </fieldset>
+
+     <fieldset class="form-group">
+         <label for="company">Company:</label>
+         <input type="text" class="form-control" id="company" placeholder="Company Name">
+      </fieldset>
+
+      <fieldset class="form-group">
+          <label for="message">Message*:</label>
+          <textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea>
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
 </form>
                                                                        
 <script type="text/javascript">
