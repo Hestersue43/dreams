@@ -1,4 +1,18 @@
-function contact(){
+$(function(){
+$("Input.textarea").jqBootstrap Validation({
+ preventSubmit:true;
+ submitError:function($form, event, errors){
+//additional error messages or events
+},	
+submitSuccess:function($form, event, errors){	
+//Prevent spam click default submit behavior 
+$("btnSubmit").attr("disabled", true);
+event.preventDefault();
+//get values from form
+var name= $("input#name	").val();
+var email=$("input#email").val();	
+var phone=$("input#phone").val();	
+var message=$("textarea#message").val();
 var firstname=name
 if (firstname.indexOf('') >=0){
 firstname=name.split('').slice(0. -1).join('');
