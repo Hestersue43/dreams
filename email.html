@@ -28,7 +28,7 @@
         <h1 style="font-family: Arial; color: #FFFFFF"><span style="font-bold: normal">Contact Us</span></h1>
         <center><p class="lead" style="vertical-align: text-bottom; width:80%; overflow:hidden; color: #FFFFFF; font-family: Arial;">
    </header>
-   <form name ="message" id="contact" novialidate>
+   <form method="post" action="">
    <div>
    <div>
    <label>Name</label>
@@ -53,6 +53,7 @@
    </div>
     <input name = "Submit" type="submit" value="Send Message" onclick="send()/> /> 
 </form>
+                                                                       
 <script type="text/javascript">
   function send() {
     var link = 'mailto:email@example.com?subject=Message from '
