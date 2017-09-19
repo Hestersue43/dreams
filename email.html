@@ -44,7 +44,7 @@ div {
         <center><p class="lead" style="vertical-align: text-bottom; width:80%; overflow:hidden; color: #FFFFFF; font-family: Arial;">
    </header>
       <h2>Contact Form</h2>
-     <div>
+    
      <form id="myform" name="myform" method="post" action="http://formspree.io/domincorp@gmail.com"/">
      <p>
     <label for='FirstName'>First Name:</label>
@@ -67,13 +67,13 @@ div {
     <textarea cols="40" rows="5" id="Message" name="Message"></textarea>
 </p>
 <p>
-                                         
+     <div>                                  
      <input type="submit" name="submit" value="Submit"/>
-     <input name="reset" type="reset" value="Clear Form"/>
-                                                
+     <input name="reset" type="reset" value="Clear Form"/></div>  
+                   
 </p>
 </form>
- </div>                                                                   
+                                                                  
 <script  type="text/javascript">
  var frmvalidator = new Validator("myform");
  frmvalidator.addValidation("FirstName","req","Please enter your First Name");
