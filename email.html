@@ -43,8 +43,7 @@ div {
         <h1 style="font-family: Arial; color: #FFFFFF"><span style="font-bold: normal">Contact Us</span></h1>
         <center><p class="lead" style="vertical-align: text-bottom; width:80%; overflow:hidden; color: #FFFFFF; font-family: Arial;">
    </header>
-      <h2>Contact Form</h2>
-    <center>
+     <h2>Contact Form</h2>
      <form id="myform" name="myform" method="post" action="http://formspree.io/domincorp@gmail.com"/">
      <p>
     <label for='FirstName'>First Name:</label>
@@ -55,25 +54,25 @@ div {
     <input type="text" id="LastName" name="LastName"/>
     </p>
      <p>
-    <label for='EMail'>EMail:</label>
+    <label for='EMail' style="padding-left: 30px;">EMail:</label>
     <input type="text" id="EMail" name="EMail"/>
     </p>
      <p>
-    <label for='Phone'>Phone:</label>
+    <label for='Phone'style="padding-left: 30px;">Phone:</label>
     <input type="text" id="Phone" name="Phone"/>
     </p>
      <p>
     <label for='Address'>Message:</label>
     <textarea cols="40" rows="5" id="Message" name="Message"></textarea>
-</p>
-<p>
+    </p>
+     <p>                                                           
      <div style="text-align:center;">                                  
      <input type="submit" name="submit" value="Submit"/></div> 
      <input name="reset" type="reset" value="Clear Form"/> 
-                   
+    </p>                  
 </p>
 </form>
- </center>                                                              
+                                                              
 <script  type="text/javascript">
  var frmvalidator = new Validator("myform");
  frmvalidator.addValidation("FirstName","req","Please enter your First Name");
