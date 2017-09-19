@@ -29,58 +29,23 @@ s <!Doctype html>
         <h1 style="font-family: Arial; color: #FFFFFF"><span style="font-bold: normal">Contact Us</span></h1>
         <center><p class="lead" style="vertical-align: text-bottom; width:80%; overflow:hidden; color: #FFFFFF; font-family: Arial;">
    </header>
-    <form action="" onsubmit="sendMail(); return false">
-    <fieldset class="form-group">
-        <label for="name">Name*:</label>
-        <input type="text" class="form-control" id="usr" placeholder="Name">
-     </fieldset>
-
-     <fieldset class="form-group">
-         <label for="email">Email Address*:</label>
-         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
-     </fieldset>
-
-     <fieldset class="form-group">
-         <label for="Phone">Phone:</label>
-         <input type="text" class="form-control" id="phone" placeholder="Phone Number">
-      </fieldset>
-
-      <fieldset class="form-group">
-          <label for="message">Message*:</label>
-          <textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea>
-      </fieldset>
-
-      <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-                                                                       
-<script>
-function myFunction() {
-    var name = document.getElementById("Name").value;
-    var email = document.getElementById("Email").value.indexOf("@");
-    var phone = document.getElementById("Phone").value;
-    var message = document.getElementById("message").value;
-
-    submitOK = "true";
-
-    if (name.length == 0) {
-        alert("You must enter your name");
-        submitOK = "false";
-    } 
-
-    if (email == -1) {
-        alert("Not a valid e-mail!");
-        submitOK = "false";
-    }
-
-    if (message.length == 0) {
-        alert("You must enter a message");
-        submitOK = "false";
-    }
-
-    if (submitOK == "false") {
-        return false;
-    }
-}
-</script>
+    <form action="https://formspree.io/veldamart@gmail.com">
+        <fieldset class="form-group">
+            <label for="usr">Name*:</label>
+            <input type="text" class="form-control" id="usr" placeholder="Name" name="message" required="required">
+         </fieldset>
+    
+         <fieldset class="form-group">
+             <label for="exampleInputEmail1">Email Address*:</label>
+             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email" required="required">
+         </fieldset>
+    
+          <fieldset class="form-group">
+              <label for="message">Message*:</label>
+              <textarea class="form-control" rows="5" id="message" placeholder="Message" name="message" required="required"></textarea>
+          </fieldset>
+    
+          <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
  </body>
 </html>
