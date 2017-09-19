@@ -40,8 +40,8 @@ s <!Doctype html>
      </fieldset>
 
      <fieldset class="form-group">
-         <label for="company">Company:</label>
-         <input type="text" class="form-control" id="company" placeholder="Company Name">
+         <label for="Phone">Phone:</label>
+         <input type="text" class="form-control" id="phone" placeholder="Phone Number">
       </fieldset>
 
       <fieldset class="form-group">
@@ -52,12 +52,33 @@ s <!Doctype html>
       <button type="submit" class="btn btn-primary">Submit</button>
 </form>
                                                                        
-<script type="text/javascript">
-  function send() {
-    var link = 'mailto:veldamart@gmail.com?subject=Message from '
-             +document.getElementById('email').value
-             +'&body='+document.getElementById('message').value;
-    window.location.href = link;
+<script>
+function myFunction() {
+    var name = document.getElementById("Name").value;
+    var email = document.getElementById("Email").value.indexOf("@");
+    var phone = document.getElementById("Phone").value;
+    var message = document.getElementById("message").value;
+
+    submitOK = "true";
+
+    if (name.length == 0) {
+        alert("You must enter your name");
+        submitOK = "false";
+    } 
+
+    if (email == -1) {
+        alert("Not a valid e-mail!");
+        submitOK = "false";
+    }
+
+    if (message.length == 0) {
+        alert("You must enter a message");
+        submitOK = "false";
+    }
+
+    if (submitOK == "false") {
+        return false;
+    }
 }
 </script>
  </body>
