@@ -25,21 +25,39 @@
   p {
     font-size: 20px;
   }
-}
-
-@media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 320px) {
   p {
     font-size: 10px;
-  }
-}
-    .bullet{
+    }
+  .bullet{
     -webkit-column-count: 3; 
     -moz-column-count: 3; 
     column-count: 3;
-
+    }
     -webkit-column-gap: 30px; 
     -moz-column-gap: 30px; 
     column-gap: 30px;
+    }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }  
+   li {
+    float: left;
+    }
+
+   li a {
+    display: inline-block;
+    color: #ffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    li a:hover {
+    background-color: #333;
 }
    </style>   
    </head>
