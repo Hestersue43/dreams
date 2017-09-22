@@ -1,15 +1,22 @@
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }  
+   li {
+    float: left;
+    }
 
-#banner {
-   text-align: center; 
-   position: relative;
-   top: 0px;
-   left: 0px;
-   right: 0px;
-   width: 60%;
-   height: 200px;
-   min-width:100%;	   
-   z-index: -1;
-   }
-  
-  p{font-size:120%;line-height:1.2;}
+   li a {
+    display: inline-block;
+    color: #ffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    li a:hover {
+    background-color: #333;
+    }
 
