@@ -16,6 +16,25 @@
     body {
     background: url("mybackgroundimage.gif") repeat;
      }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }  
+   li {
+    float: left;
+    }
+   li a {
+    display: inline-block;
+    color: #ffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    li a:hover {
+    background-color: #333;
+}	   
     @media screen and (min-width: 40.5em) {
      {
     width: 50%;
@@ -34,32 +53,12 @@
     -moz-column-count: 3; 
     column-count: 3;
     }
-    {	  
+   }	  
     -webkit-column-gap: 30px; 
     -moz-column-gap: 30px; 
     column-gap: 30px;
     }
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    }  
-   li {
-    float: left;
-    }
-
-   li a {
-    display: inline-block;
-    color: #ffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
-
-    li a:hover {
-    background-color: #333;
-}
+  }
    </style>   
    </head>
 <body>
