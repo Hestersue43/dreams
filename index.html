@@ -34,6 +34,28 @@
    min-width:50%;	   
    z-index: -1;
    }
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }  
+   li {
+    float: left;
+    }
+
+   li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    li a:hover {
+    background-color: #111;
+    }
 	   
   .main{
     position:relative;
@@ -73,15 +95,15 @@
     <body>
     <header>
         <center><h1 style="font-family: Arial; color: white;"><span style="font-weight: normal">Dreams of Millions, Inc.</center></h1>
-     </header> 
-	    <div class="link"><a href="index.hml">home</a></div>
-	    <div class="link"><a href="dreamteam.html">The Participants Role</a></div>
-	 <div class="link"><a href="background.html">About Us</a></div>
-	 <div class="link"><a href="ceo.hml">meet ceo</a></div> 
-	  <p>
-           <a href="dreamteam.html" title="Ceo" class="btn btn-primary btn-lg">The Participants Role&raquo;</a>
-          </p>
-         <div>
+     </header>
+	 <ul>
+	 <li class="link"><a href="index.hml">Home</a></li>
+	 <li> class="link"><a href="dreamteam.html">The Participants Role</a></li>
+	 <li class="link"><a href="background.html">About Us</a></li>
+	 <li class="link"><a href="ceo.hml">Meet The Ceo</a></li>
+	</ul>
+	</header>    
+	 <div>
 	</div>
         <div class="main">
         <div class="about">
