@@ -16,25 +16,25 @@
     body {
     background: url("mybackgroundimage.gif") repeat;
      }
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    }  
-   li {
+    .topnav a {
     float: left;
-    }
-   li a {
-    display: inline-block;
-    color: #ffff;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
     }
-    li a:hover {
+
+   .topnav a:hover {
     background-color: #333;
-}	   
+    color: black;
+    }
+
+   .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+   }
     @media screen and (min-width: 40.5em) {
      {
     width: 50%;
@@ -63,12 +63,12 @@
 <body>
 <header>
         <h1 style="font-family: Arial; color: #FFFFFF"><span style="font-bold: normal">About Us</h1>
-	<ul>
-	 <li><a href="index.html">Home</a></li>
-	 <li><a href="dreamteam.html">The Participants Role</a></li>
-	 <li><a href="background.html">About Us</a></li>
-	 <li><a href="ceo.html">Meet The Ceo</a></li>
-	</ul>	
+	<div class="topnav">	 
+	 <a class="active" href="index.html">Home</a>
+	 <a href="dreamteam.html">The Participants Role</a>
+	 <a href="background.html">About Us</a>
+	 <a href="ceo.html">Meet The Ceo</a>
+	</div>	
   </header>      
  <div>
 </div>
