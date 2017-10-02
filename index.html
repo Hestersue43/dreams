@@ -14,6 +14,11 @@
      }   
       body {background: url("mybackgroundimage.gif") repeat;
      }
+    .topnav {
+     background-color: #ffff;
+     overflow: hidden;
+     }
+	 
      .topnav a {
       float: left;
       display: block;
@@ -29,9 +34,10 @@
       }
       .topnav a.active {
        background-color: #b284be;
-       color: #ffff; } 
-    
-    @media screen and (min-width: 40.5em) {
+       color: #ffff;
+     } 	   
+    @media screen 
+    and (min-width: 40.5em) {
     .main {
      width: 50%;
      float: left;
@@ -42,6 +48,8 @@
     min-width:100%;
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     }
 	   
   .about{
