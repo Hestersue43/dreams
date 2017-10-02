@@ -30,11 +30,17 @@
       .topnav a.active {
        background-color: #b284be;
        color: #ffff; } 
-     
-    @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){
-    .main {
-      width: 50%;
-      float: left;  }  
+    
+    @media screen and (min-width: 40.5em) {
+     {
+       width: 50%;
+       float: left;  }
+   @media only screen and (max-width: 768px) {
+   .main {
+    font-size: 20px;}
+   @media only screen and (max-width: 320px) {
+   .main {
+    font-size: 10px;  }	    
    
    .main{
     position:relative;
