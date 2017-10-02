@@ -32,15 +32,18 @@
        color: #ffff; } 
     
     @media screen and (min-width: 40.5em) {
-     {
+    .main {{
        width: 50%;
        float: left;  }
   
    @media only screen and (max-width: 320px) {
    .main {
     font-size: 10px;  }	    
-   
-   .main{
+    @media only screen and (max-width: 768px) {
+   .main {
+   font-size: 10px;  }	 
+ 
+    .main{
     position:relative;
     min-width:100%;
     display: -webkit-flex;
