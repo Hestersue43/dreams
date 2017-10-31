@@ -183,7 +183,17 @@ text-align:center;
 -moz-perspective:200px;	
 -o-perspective:200px;	
 perspective:200px;			      
-}		      
+}
+		      
+#book.hard{
+background-color#403E3E |important;
+color:#fff;	
+-webkit-box-shadow:image 0 0 5px #666;	
+-moz-box-shadow:image 0 0 5px #666;
+-o-box-shadow:image 0 0 5px #666;
+-mm-box-shadow:image 0 0 5px #666;
+font-weight:bold;		      
+}
 		      
   </br>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -209,15 +219,15 @@ alt="Donate">
  <!-- Display the payment button. -->
 <script type="text/javascript">
 function loadApp() {
-// Create the flipbook
-$('.flipbook').turn({
-width:922,
-height:600,
+// Create the book
+$('#book').turn({
+width:800,
+height:500,
 elevation: 50,
 gradients: true,
 autoCenter: true
 });
-}
+
 // Load the HTML4 version if there's not CSS transform
 yepnope({
 	test : Modernizr.csstransforms,
