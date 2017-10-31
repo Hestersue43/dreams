@@ -222,13 +222,56 @@ div.main{
     <div align="center">		 
     <div style="width: 100px; height: 100px; background-image:url('../pages/page1.jpg')"></div>
     <div style="width: 100px; height: 100px; background-image:url('../pages/page2.jpg')"></div>
-    <div style="width: 100px; height: 100px; background-image:url('../pages/page3.jpg')"></div>
     <div style="width: 100px; height: 100px; background-image:url('../pages/page4.jpg')"></div>
    </div>
    </div> 								 
 </div>
-</div>											
-</span>
+</div>
+	<script type="text/javascript">
+
+function loadApp() {
+
+	var flipbook = $('.flipbook');
+
+ 	// Check if the CSS was already loaded
+	
+	if (flipbook.width()==0 || flipbook.height()==0) {
+		setTimeout(loadApp, 10);
+		return;
+	}
+
+	$('.flipbook .double').scissor();
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../../lib/turn.min.js'],
+	nope: ['../../lib/turn.html4.min.js'],
+	both: ['../../lib/scissor.min.js', 'css/double-page.css'],
+	complete: loadApp
+});
+
+</script>										
+
 </br> 		
  </br>
  <div align="center">                                                        
@@ -255,32 +298,7 @@ alt="Donate">
 <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
 </div>
  </form>
-<script type="text/javascript">
-function loadApp() {
-// Create the flipbook
-$('.flipbook').turn({
-// Width
-width:922,
-// Height
-height:600,
-// Elevation
-elevation: 50,
-// Enable gradients
-gradients: true,
-// Auto center this flipbook
-autoCenter: true
-});
-}
-
-// Load the HTML4 version if there's not CSS transform
- yepnope({
- test : Modernizr.csstransforms,
- yep: ['../../lib/turn.js'],
- nope: ['../../lib/turn.html4.min.js'],
- both: ['css/basic.css'],
- complete: loadApp
- });
-</script>			                                                               
-</body>
+ </body>                                     
 </html>
+
 
