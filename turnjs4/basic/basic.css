@@ -3,6 +3,7 @@ body{
  background-color:#fcfcfc;
  margin:0;
  padding:0;
+ color:green;
 }
 .flipbook-viewport{
  overflow:hidden;
@@ -11,7 +12,6 @@ body{
  }
 .flipbook.container{
  position:absolute;
- color:green;
  top:50%;
  left:50%;
  margin:auto;
