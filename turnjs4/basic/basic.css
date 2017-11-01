@@ -1,9 +1,10 @@
 body{
  overflow:hidden;
+ color:Blue;
  background-color:#fcfcfc;
  margin:0;
  padding:0;
- color:green;
+ 
 }
 .flipbook-viewport{
  overflow:hidden;
