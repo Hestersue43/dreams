@@ -24,16 +24,11 @@ header{background: linear-gradient(#ee82ee,#753a88);
 } 
 body {background: url("mybackgroundimage.gif") repeat;
 }  
- 
- .main{
-   position:absolute;
-   width: 100% 
-     } 
-	
-  header nav {
-  float:left;
-  margin-top:6px;
- }
+.topnav {
+ background-color: #ffff;
+ overflow: hidden;
+ }	
+
   .topnav a {
   float: left;
   display: block;
@@ -89,13 +84,12 @@ body {background: url("mybackgroundimage.gif") repeat;
    <h1 style="font-family: Arial; color: black"; font-bold: normal">2018 Calendar/Planner</h1>
   </header>
   <div class="topnav"> 
-  <a class="active" href="http://dreamsofmillionsinc.com/index.html">Home</a>
-  <a href="http://dreamsofmillionsinc.com/background.html">About Us</a>
-  <a href="http://dreamsofmillionsinc.com/ceo.html">Ceo</a>
-  <a href="http://dreamsofmillionsinc.com/dreamteam.html">Our Expectations</a>
-  <a href="http://dreamsofmillionsinc.com/Products.html">Products</a>								 
+   <h2><a class="active" href="http://dreamsofmillionsinc.com/index.html">Home</a></h2>
+   <h2><a href="http://dreamsofmillionsinc.com/background.html">About Us</a>
+   <h2><a href="http://dreamsofmillionsinc.com/ceo.html">Ceo</a></h2>
+   <h2><a href="http://dreamsofmillionsinc.com/dreamteam.html">Our Expectations</a>/<h2>
+   <h2> <a href="http://dreamsofmillionsinc.com/Products.html">Products</a></h2>								 
   </div> 
-							</div>
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
   <!-- Identify your business so that you can collect the payments. -->
   <input type="hidden" name="business" value="kin@kinskards.com">
