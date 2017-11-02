@@ -148,34 +148,32 @@ div.main{
   Dreams of Millions, Inc.  wants you to <b>Never</b> miss an appointment again, an important meeting again, an important date again, a special birthday again, or overbook an appointment ever again.</p>										       
   </br>
  </br>
-    <div align="center">
+      <div align="center">
 	<div class="container">
 		<div class="flipbook">
 			<div style="background-image:url(pages/page1.jpg)"></div>
 			<div style="background-image:url(pages/page2.jpg)"></div>
 			<div style="background-image:url(pages/page3.jpg)"></div>
 			<div style="background-image:url(pages/page4.jpg)"></div>
-			 <img src="images/1calendar.jpg" class="resp-image" alt=""><br> 
 		</div>
-	</div>
-</div>
-
-<script type="text/javascript">
-function loadApp() {
+       </div>
+    </div>
+   <script type="text/javascript">
+   function loadApp() {
 	// Create the flipbook
 	$('.flipbook').turn({
 		// Width
 		width:522,
 		// Height
-    	   height:300,
+    	        height:300,
 		// Elevation
 			elevation: 50,
 		// Enable gradients
 			gradients: true,
 		// Auto center this flipbook
-			autoCenter: true
+		autoCenter: true
 	});
-}
+    }
    // Load the HTML4 version if there's not CSS transform
    yepnope({
 	test : Modernizr.csstransforms,
@@ -184,7 +182,6 @@ function loadApp() {
 	both: ['css/basic.css'],
 	complete: loadApp
   });
-
 </script>
 </br> 		
  </br>
@@ -200,8 +197,7 @@ function loadApp() {
  <!-- Display the payment button. -->	    
    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
   <!-- Identify your business so that you can collect the payments. -->
-  <input type="hidden" name="business"
- value="donations@dreamsofmillions.com">
+  <input type="hidden" name="business" value="donations@dreamsofmillions.com">
 				       
 <!-- Specify a Donate button. -->
 <input type="hidden" name="cmd" value="_donations">
@@ -211,8 +207,7 @@ function loadApp() {
 <input type="hidden" name="currency_code" value="USD">
 <!-- Display the payment button. -->
 <div style="text-align:center;">
-<input type="image" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_92x26.png"
-alt="Donate">
+<input type="image" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_92x26.png" alt="Donate">
 <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
 </div>
  </form>
