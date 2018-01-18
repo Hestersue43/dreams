@@ -1,13 +1,78 @@
-
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>The Participants Page</title>
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>Products</title>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta name="description" content="Home Page : My Github Web" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<script src="gen_validatorv4.js" type="text/javascript"></script>
+<style>
+  header{background: linear-gradient(#ee82ee,#753a88); 
+     width: 100%
+     top: 10;
+     }   
+     body {background: url("mybackgroundimage.gif") repeat;
+     margin: auto;
+     }
+   .container {
+     width: 75%;
+     margin: 0 auto;
+     }     
+   
+  .main{
+   position:relative;
+   width:100%;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   } 
+ header nav {
+    float:left;
+    margin-top:6px;
+ }
+.topnav {
+ background-color: #ffff;
+  overflow: hidden;
+ } 
+.topnav a {
+float: left;
+display: block;
+color: #000000;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.topnav a:hover {
+background-color:#aed6f1;
+opacity: .4;
+color: #ffff;
+}
+.topnav a.active {
+background-color: #b284be;
+color: #ffff;
+} 
+@media screen and (min-width: 40.5em) {
+{
+width: 100%;
+float: left;
+}
+</style> 
 </head>
 <body>
-	<h1>Participants</h1>
-	What participants do at Dreams
+<header>
+<h1 style="font-family: Arial; color: #FFFFFF" font-bold: normal">Participants</h1>
+ </header>                                                                
+<div class="topnav"> 
+	
+  
+What participants do at Dreams
 <ul> 	
 <li>Network: Communicating with others to explain, gather, and disseminate information and ideas to gain knowledge, sources and materials to complete our goals. </li>
 <li>Peer Support: Communicate within our own members about our personal challenges, achievements, and goals.</li>
