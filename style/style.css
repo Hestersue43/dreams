@@ -37,6 +37,33 @@ nav ul a {
 nav ul li:hover {
   background: #f2184f;
 }
+.responsive-bar {
+  width; 100%;
+  background: #202c45;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+.responsive-bar h3 {
+  margin; 0;
+  padding: 3px 0px;
+  float; left;
+}
+.responsive-bar h3 a{
+  color; #fff;
+  text-decoration:none;
+}
+
+.responsive-bar h4 {
+  margin; 0;
+  padding: 0px;
+  color; #fff;
+  float; right;
+}
+.responsive-bar ha a{
+  color; #fff;
+  text-decoration:none;
+}
+
   
   
 
