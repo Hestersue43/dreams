@@ -23,4 +23,20 @@ nav ul{
   padding:0;
   float:right;
 }
+nav ul li{
+  list-style: noen;
+  display: inline-block;
+  padding: 20px 30px;
+  transition: .5s;
+}
+nav ul a {
+  color: #fff;
+  text-decoration:none;
+} 
+
+nav ul li:hover {
+  background: #f2184f;
+  
+  
+
     
