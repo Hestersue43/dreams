@@ -1,13 +1,19 @@
 <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
-    <head runat="server">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no /">       
     <title>Dreams of Millions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Home Page : My Github Web" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108355195-1"></script>
-    <script>
+
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -21,10 +27,6 @@
     enable_page_level_ads: true
      });
    </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Home Page : My Github Web" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <style>
      header{background: linear-gradient(#ee82ee,#753a88); 
      width: 100%
@@ -37,18 +39,18 @@
      width: 75%;
      margin: 0 auto;
      }     
-    .topnav {
+    .nav {
      background-color: #ffff;
      overflow: hidden;
      }
-     .topnav a {
+     .nav a {
       float: left;
       display: block;
       color: #000000;
       padding: 14px 16px;
       text-decoration: none;
       }
-      .topnav a:hover {
+      .nav a:hover {
       background-color:#aed6f1;
       opacity: .4;
       color: #ffff;
@@ -107,9 +109,9 @@
    </head>
     <body>
        <header>
-         <h1 style="font-family: Arial; color: #FFFFFF"><span style="font-bold: normal">Dreams of Millions, Inc.</h1>
+	       <h1 class="brand"><a href="#">Dreams of Millions, Inc.</a></h1>
        </header>  
-	 <div class="topnav">	 
+	 <div class="nav">	 
 		<a class="active" href="background.html">About Us</a>
 		<a href="ceo.html">Ceo</a>
 		<a href="dreamteam.html">Our Expectations</a>
