@@ -1,1 +1,148 @@
-h
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="c:user/velda/desktop/menu/style.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+		document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
+		}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+			document.body.style.backgroundColor = "white";
+		} 
+	</script>
+	<style> 
+			
+			*{
+				margin:0px;
+				padding 0px;
+				font-size: 1em;
+			 }
+			  
+			* {
+			  font-family:sans-serif;
+			  list-style:none;
+			  }
+		  
+			  header{
+			  height: 75px;
+			  margin: 0;
+			  font-size:1.5em;
+			  padding:0px 0 10px 5px;
+			  background: linear-gradient(#ee82ee, #753a88);
+			  color:#fff;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  text-align: center;
+			} 
+		  
+			.container {
+			
+			 width: 75%;
+			 margin: 0 auto;
+			 color:#000;
+			}		  
+	  
+		  .sidenav {
+			height: 100%; 
+			width: 0; 
+			position: fixed; 
+			z-index: 1; 
+			top: 0px; 
+			left: 0;
+			background-color:rgba(0,0,0,0.5);
+			overflow-x: hidden; 
+			padding-top: 60px; 
+			transition: 0.5s; 
+			}
+			
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #fff;
+			display: block;
+			transition: 0.3s;
+			}
+		.sidenav a:hover a:active{
+		 background-color: #b284be;
+		 color: #ffff;
+		}
+		.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 35px;
+			font-size: 36px;
+			margin-left: 50px;
+			}
+			
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 18px;}
+				}
+			
+		.border-menu {
+		  position: relative;
+		  padding-left: 1.25em;
+			}
+		.border-menu:before {
+		  content: "";
+		  position: absolute;
+		  top: 0.25em;
+		  left: 0;
+		  width: 1em;
+		  height: 0.125em;
+		  border-top: 0.375em double #000;
+		  border-bottom: 0.125em solid #000;
+			}
+					
+		ol li {
+		list-style-type: square;
+		margin: 0;
+		padding: 0;
+		}
+	    </style>
+	    </head>
+    <body>
+	
+	<header><h2>Products and Services</h2></header>
+	<span onclick="openNav()"> 
+	
+	<i class="fa fa-align-justify" style="font-size:36px; color:#753a88; margin-left:15px"></i></span>
+	<div id="mySidenav" class="sidenav">
+	<br><br>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<br><br>
+	<a class="active" href="index.html">Home</a>
+	<a href="aboutus.html">About Us</a>
+	<a href="theceo.html">Ceo</a>
+	<a href="clients.html">The Dream Team</a>
+	<a href="ourexpectation.html">Our Expectations</a>
+	<a href="calendarmenu.html">Donate</a>
+	</br>
+	</div>
+	
+	<div class="container">                   
+	<p style="font-family: font: bold; normal Arial; margin-top: 60px;"><b>Our Assignment:</b>&nbsp;<span>To help under-resourced participants move toward financial stability.</span>
+	<b>Our Dream:</b>&nbsp;For participants everywhere to have the necessary resources to take care of themselves and their families.</p><br>
+	<p>Each lifestyle management calendar purchased supports participants rising out of poverty. Our calendars are constructed with a personal touch, 
+	   by determined participants who are intentional about taking steps to better their lives!	</p><br>
+	   
+	<p>Our organization works like a volunteer internship program. Participants gift us with their time, an average of 24 hours monthly, or about 6 hours weekly.</p> 
+	<p>The team of participants manage the logistics of receiving, processing, and filling orders, constructing the product, managing the warehousing of the products 
+	   and supplies, maintaining inventory, shipping the product, assisting with quality improvement, and assisting with marketing management. They also mentor new team members.</p><br>
+	<p>The takeaway for the participants.</p><br>
+	
+	<ol>
+	<li>A variety of workplace experiences</li>
+	<li>No cost, personal support and coaching sessions, using the tool that they themselves have designed and constructed, to attain personal and professional goals</li><br>
+	<li>The support of leadership to network, make referrals, and collaborate with other businesses and organizations to help participants build their social and financial capital and resources.</li><br>
+	<li>A variety of skills and knowledge gained such as: workplace behavior management, customer service, communication skills, time management, process management, and individual and group work success.</li><br>
+	</ol><br>
+	
+	</div>
+	</body>
+	</html>
