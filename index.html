@@ -209,6 +209,7 @@
 		<a href="calendarmenu.html">Donate Page</a>
 		<button class="btn" onclick="self.close()">Exit The Site</button>
     	       <input type="button" value="Close this window" onclick="self.close()">
+		<input type="button" value="Close this window" onclick="windowClose();">
 	</div>
 	<div style ="clear: both"></div>
 	<div class ="container">
@@ -280,5 +281,11 @@
   <br><br>
   <footer>
 </footer>
+<script language="javascript" type="text/javascript">
+function windowClose() {
+window.open('','_parent','');
+window.close();
+}
+</script>								
 </body>
 </html>
