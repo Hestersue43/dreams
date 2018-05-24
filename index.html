@@ -3,26 +3,20 @@
 <head>
 <meta charset=utf-8">
 <title></title>
-<script type="text/javascript">
-    function closepage() {
-      var win = window.open('', '_self');
-      win.close();
-    }
-  </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="c:user/velda/desktop/menu/style.css">
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript">
-	function openNav() {
+    function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
-	}
-	function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-		document.getElementById("main").style.marginLeft = "0";
-		document.body.style.backgroundColor = "white";
-	} 
+    }
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+    } 
     </script>
    <style> 
 	*{
@@ -213,11 +207,8 @@
 		<a href="ourexpectation.html">Our Expectations</a>
 		<a href="services.html">Our Services</a>
 		<a href="calendarmenu.html">Donate Page</a>
-		<a href="javascript:void(0)" class="btn" onclick="closepage()">;</a>		   
-		<button class="btn" onclick="closepage()">Exit The Site</button>
-		 <input type="button" runat="server" onclick="closepage();" value="Close Page 2" />
-	  
- 	</div>
+		<button class="btn" onclick="self.closee()">Exit The Site</button>
+	</div>
 	<div style ="clear: both"></div>
 	<div class ="container">
 	       <div class="content">
