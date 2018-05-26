@@ -108,8 +108,8 @@
 	border-top: 0.375em double #000;
 	border-bottom: 0.125em solid #000;
 	}
-	.sidebar .btn{
-	margin:auto;
+.sidebar .btn{
+		margin:auto;
 		width:40%;
 		border-radius: 10px;
 		border: none;
@@ -139,6 +139,5 @@ label {
 	letter-spacing: 0.1em;
 	margin-bottom: 20px;
 	color:aliceblue;
-		background: linear-gradient(#ee82ee, #753a88);
+	background: linear-gradient(#ee82ee, #753a88);
 }
-
