@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Contact Form</title>
     <meta charset="UTF-8">
-    <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="C:/Users\/elda/Desktop/All Folders/dreams/style/contact.css">
-     <link rel="stylesheet"href="https://github.com/veldamart/dreams/blob/gh-pages/style/contact.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='custom.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
      <!-- Bootstrap -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,11 +26,9 @@
     document.body.style.backgroundColor = "white";
     } 
     </script>
-    <title>Contact</title>
- 
-</head>
+    </head>
 <body>
-        <header><h2>Contact</h2></header>
+        <header><h2>Contact Form</h2></header>
         <span onclick="openNav()"> 
         <i class="fa fa-align-justify" style="font-size:36px; color:#753a88; margin-left:15px">&nbsp;Menu</i></span>
         <br><br> 										      
@@ -44,40 +43,76 @@
             <a href="services.html">Our Services</a>
             <a href="calendarmenu.html">Donate Page</a>
             <button class="btn" onclick="self.close()">Exit The Site</button>
-        </div>   
-<div  id =" contact" class="contact">
-   <div class="container">
-   <div class="row">
-    <div class= "row marginRow">
-    <div class="bg"></div>
+       </div>   
+       <div class="container">
+       <div class="row">
+       <div class="col-lg-8 col-lg-offset-2">
+       <p class="lead"><p>Tell us your story. Let us know what we can do to help you.  We would like to hear from you.</p> 
+       <form id="contact-form" method="post" action="contact.php" role="form">
+            <div class="messages"></div>
+            <div class="controls">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">Firstname *</label>
+                            <i class="fa fa-user"></i><input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Lastname *</label>
+                            <i class="fa fa-user"></i><input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <i class="fa fa-envelope"></i><input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_phone">Phone</label>
+                            <i class="fa fa-phone"></i><input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message *</label>
+                            <i class="fa fa-comments"></i><textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                    </div>
+                </div>
+            </div>
 
-    <p>Tell us your story. Let us know what we can do to help you.  We would like to hear from you.</p> 
-   </div>
-    <div class="col-lg-6 col-md-6">
-        <div class="input-group input-group-lg">
-        <span class = input-group-addon" id="sizing-addon1"><i class="fa fa-user"></i></span>
-        <input type="text" class=form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
-    </div>
-    <div class="input-group input-group-lg">
-        <span class = input-group-addon" id="sizing-addon1"><i class="fa fa-envelope"></i></span>
-        <input type="text" class=form-control" aria-describedby="sizing-addon1"  placeholder="E-mail">
-    </div>
-    <div class="input-group input-group-lg">
-        <span class = input-group-addon" id="sizing-addon1"><i class="fa fa-phone"></i></span>
-        <input type="text" class=form-control" aria-describedby="sizing-addon1"  placeholder="Phone Number">
-    </div>
-</div>
+        </form>
 
-<div class="col-lg-6 col-md-6">
- <div class="input-group">
-    <textarea name="" id="" cols="80" rows="6" class="form-control"l></textarea>
-</div>
-</div>
-</div>
-<button class="btn btn-lg">Submit Your Message</button>
-</div>
+    </div><!-- /.8 -->
 
-</div>
-</div> 
- </body>
+</div> <!-- /.row-->
+
+</div> <!-- /.container-->
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="validator.js"></script>
+<script src="contact.js"></script>
+</body>
 </html>
