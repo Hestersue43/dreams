@@ -107,12 +107,12 @@ height: 0.125em;
 border-top: 0.375em double #000;
 border-bottom: 0.125em solid #000;
 }
-button.btn{
-margin-left: 20%;	   
+button.cbtn{
+margin-left: 5%;	   
 }
-.btn {
+.cbtn {
 margin: auto;
-width: 60%;
+width: 40%;
 border-radius: 10px;
 border: none;
 padding: 10px 20px;
