@@ -1,51 +1,50 @@
 *{
-	margin:0px;
-	padding 0px;
-	 }
-			  
-	* {
-	font-family:sans-serif;
-	list-style:none;
-	}
+ margin:0px;
+ padding 0px;
+ }
+* {
+font-family:sans-serif;
+list-style:none;
+}
 
-	body {
-    width: 100%;
-    height: 100%;
-    font-size:17px;
-    background-color: #ffffff;
-    position: absolute;
-    top: 0;
-    bottom: 0;	   
-    background: url("images/women.jpg") repeat;
-    }
+body {
+width: 100%;
+height: 100%;
+font-size:17px;
+background-color: #ffffff;
+position: absolute;
+top: 0;
+bottom: 0;	   
+background: url("images/women.jpg") repeat;
+}
 
 .bg { 
-    /* The image used */
-		background-image: url("images/women.jpg");
+* The image used */
+ background-image: url("images/women.jpg");
 		
-    /* Full height */
-    height: 100%; 
+ /* Full height */
+ height: 100%; 
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 		  
-	header{
-	height: 75px;
-	margin: 0;
-	width:100%;						     
-	font-size:1.5em;
-	padding:0px 0 10px 5px;
-	background: linear-gradient(#ee82ee, #753a88);
-	color:#fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	} 
+header{
+height: 75px;
+margin: 0;
+width:100%;						     
+font-size:1.5em;
+padding:0px 0 10px 5px;
+background: linear-gradient(#ee82ee, #753a88);
+color:#fff;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+} 
 		  
 	.container {
 	 width: 100%;
