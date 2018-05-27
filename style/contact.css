@@ -122,7 +122,6 @@ margin-left: 20%;
 }
 .btn{
 margin:auto;
-width:40%;
 border-radius: 10px;
 border: none;
 padding: 10px 20px;
@@ -132,7 +131,7 @@ text-align: center;
 }
 
 button.btn{
-margin-left: 20%;
+margin-left: 10%;
 }	   
 
 /*contact*/
