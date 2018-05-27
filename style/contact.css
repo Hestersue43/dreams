@@ -110,15 +110,15 @@ border-bottom: 0.125em solid #000;
 button.btn{
 margin-left: 20%;	   
 }
-.btn{
-margin:auto;
-width:40%;
+.btn {
+margin: auto;
+width: 60%;
 border-radius: 10px;
 border: none;
 padding: 10px 20px;
-color:aliceblue;
+color: aliceblue;
 background: linear-gradient(#ee82ee, #753a88);
-text-align: center;	   
+text-align: center;
 }
 
 /*contact*/
