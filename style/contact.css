@@ -120,6 +120,20 @@ text-align: center;
 .sidebar button.btn{
 margin-left: 20%;	   
 }
+.btn{
+margin:auto;
+width:40%;
+border-radius: 10px;
+border: none;
+padding: 10px 20px;
+color:aliceblue;
+background: linear-gradient(#ee82ee, #753a88);
+text-align: center;	   
+}
+
+button.btn{
+margin-left: 20%;	   
+}	   
 
 /*contact*/
 	
