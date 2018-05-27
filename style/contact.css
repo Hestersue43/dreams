@@ -19,11 +19,10 @@
     background: url("images/women.jpg") repeat;
     }
 
-.bg { 
+	.bg { 
     /* The image used */
 		background-image: url("images/women.jpg");
 		
-
     /* Full height */
     height: 100%; 
 
@@ -31,9 +30,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+    }
 
-		  
 	header{
 	height: 75px;
 	margin: 0;
@@ -109,67 +107,38 @@
 	border-top: 0.375em double #000;
 	border-bottom: 0.125em solid #000;
 	}
-.sidebar .btn{
-		margin:auto;
-		width:40%;
-		border-radius: 10px;
-		border: none;
-		padding: 10px 20px;
-		color:aliceblue;
-		background: linear-gradient(#ee82ee, #753a88);
-		text-align: center;	   
-		}
-		.sidebar	button.btn{
-		margin-left: 20%;	   
-		}
+   .sidebar .btn{
+	margin:auto;
+	width:40%;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 20px;
+	color:aliceblue;
+	background: linear-gradient(#ee82ee, #753a88);
+	text-align: center;	   
+	}
+	.sidebar	button.btn{
+	margin-left: 20%;	   
+	}
 
-
-/*contact*/
-
-.contact{
-  padding: 50px 0 80px;
-  text-align: center;
-}
-
-.contact p{
-  padding-botto:  80px;
-  color: #737373;
-}
-
-contact h2{
-
-  color: #4c4c4c;
-  margin: 20px 0 20px
-}
-
-.contact .input-group {
-  margin-bottom: 25px;
-}
-
-.contact .form-control{
-  border-radius: 0 !important;
-}
-
-.contact .span {
-  border-radius: 0 !important;
-}
-.contact .btn{
-  border-radius: 0;
-  width: 45%;
-	font-size: 15px;	
-	text-align: center;	 
-	 background: linear-gradient(#ee82ee, #753a88);
-  color: #fff;
-}
-
-.contact .btnhover{
-  background-color #a85959 !important;
-  color: #fff  !important;
-
-}
-
-.marginRow{
-  margin: 20px !important; 
-}
+    /*contact*/
+	
+	body {
+	font-family: 'Lato', sans-serif;
+    }
+	h1{
+	margin-bottom: 40px;
+    }
+	label {
+	color: #333;
+    }
+	.btn-send {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-bottom: 20px;
+	color:aliceblue;
+	background: linear-gradient(#ee82ee, #753a88);
+	}
 
 
