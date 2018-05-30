@@ -60,6 +60,7 @@
                         <div class="form-group">
                             <label for="form_name">Firstname *</label>
                             <i class="fa fa-user"></i><input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" autofocus>
+                            <span class="error"><?= $name_error ?></span>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -67,6 +68,7 @@
                         <div class="form-group">
                             <label for="form_lastname">Lastname *</label>
                             <i class="fa fa-user"></i><input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *">
+                           <span class="error"><?= $surname_error ?></span>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -76,6 +78,7 @@
                         <div class="form-group">
                             <label for="form_email">Email *</label>
                             <i class="fa fa-envelope"></i><input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *">
+                            <span class="error"><?= $email_error ?></span>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -83,6 +86,7 @@
                         <div class="form-group">
                             <label for="form_phone">Phone</label>
                             <i class="fa fa-phone"></i><input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                            <span class="error"><?= $phone_error ?></span>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
