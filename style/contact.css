@@ -143,3 +143,9 @@ background: linear-gradient(#ee82ee, #753a88);
 .error{
 color:red;
 }
+.success {
+color: #ff9966;
+text-align: center;
+font-weight: bold;
+font-size: 14px;
+}
