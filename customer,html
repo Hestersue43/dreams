@@ -2,9 +2,10 @@
 <html lang="en">
 </head>
    <body>
-      <h1>Phone Number</h1>
-      <?php include('form.php') ?>
-      <?php include('contact.php') ?>
+      <h1>Contact Us</h1>
+      
+      <?php include('php/contact.php') ?>
+      <?php include('php/form.php') ?>
    </body>
 </html>
        
