@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-
+        <div class = "success"><?= $success; ?></div> 
         </form>
 
     </div><!-- /.8 -->
