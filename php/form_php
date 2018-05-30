@@ -1,4 +1,6 @@
 <?php
+
+die;
 $name_error =$surname_error=$email_error = $phone_error=$message_error;
 $name =$surname=$email = $phone=$message;
 
@@ -44,4 +46,12 @@ if (empty($_POST["message"])){
 } else {
 $phone = test_input($_POST["message"]);
   }
+}
+
+function test_input($data) {
+ $data = trim($data);
+ $data = stripslashes($data);
+ $data = htmlspecialchars($data);
+ return $data;
+
 }
