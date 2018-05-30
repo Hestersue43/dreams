@@ -1,1 +1,142 @@
-hello
+*{
+ margin:0px;
+ padding 0px;
+ }
+* {
+font-family:sans-serif;
+list-style:none;
+}
+
+body {
+width: 100%;
+height: 100%;
+font-size:17px;
+background-color: #ffffff;
+position: absolute;
+top: 0;
+bottom: 0;	   
+background: url("images/women.jpg") repeat;
+}
+
+.bg { 
+* The image used */
+ background-image: url("images/women.jpg");
+		
+ /* Full height */
+ height: 100%; 
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+		  
+header{
+height: 75px;
+margin: 0;
+width:100%;						     
+font-size:1.5em;
+padding:0px 0 10px 5px;
+background: linear-gradient(#ee82ee, #753a88);
+color:#fff;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+} 
+		  
+.container {
+width: 100%;
+font-size:16px;
+ margin: 0 auto;
+ color:#000;
+ }
+
+.sidenav {
+height: 100%; 
+width: 0; 
+position: fixed; 
+z-index: 1; 
+top: 0px; 
+left: 0;
+background: linear-gradient(#ee82ee, #753a88);					     
+overflow-x: hidden; 
+padding-top: 60px; 
+transition: 0.5s; 
+}
+			
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #fff;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover a:active{
+background-color: #b284be;
+color: #ffff;
+}
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 35px;
+font-size: 36px;
+margin-left: 50px;
+}
+	
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+			
+.border-menu {
+ position: relative;
+ padding-left: 1.25em;
+}
+
+.border-menu:before {
+content: "";
+position: absolute;
+top: 0.25em;
+left: 0;
+width: 1em;
+height: 0.125em;
+border-top: 0.375em double #000;
+border-bottom: 0.125em solid #000;
+}
+button.cbtn {
+margin-left: 15%;
+}
+.cbtn {
+margin: auto;
+width: 40%;
+border-radius: 10px;
+border: none;
+padding: 10px 20px;
+color: aliceblue;
+background: linear-gradient(#ee82ee, #753a88);
+text-align: center;
+}
+
+/*contact*/
+	
+body {
+font-family: 'Lato', sans-serif;
+}
+h1{
+margin-bottom: 40px;
+}
+label {
+color: #333;
+}
+.btn-send {
+font-weight: 300;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+margin-bottom: 20px;
+color:aliceblue;
+background: linear-gradient(#ee82ee, #753a88);
+}
