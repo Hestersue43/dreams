@@ -91,7 +91,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="form_message">Message *</label>
-                            <i class="fa fa-comments"></i><textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4"></textarea>
+                            <i class="fa fa-comments"></i><textarea id="form_message" name="message" class="form-control" placeholder="Please leave us a messag *" rows="4"></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
