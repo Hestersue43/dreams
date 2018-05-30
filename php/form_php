@@ -1,1 +1,2 @@
-hello
+<?php
+$name_error =$email_error = $phone_error
