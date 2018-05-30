@@ -4,6 +4,7 @@
     <title>Contact Form</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include('form_contact.php');  ?>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href=' dreams/style/contact.css' rel='stylesheet' type='text/css'>
@@ -51,7 +52,7 @@
         I have successfully helped hundreds of clients achieve their personal and career goals in the Greene County Markets. 
         Accountability, professionalism and customer satisfaction are the cornerstones of my consulting business. Our goal is to create raving fans out of every client we work with!
         Your referrals are the lifeblood of my business. You can email your referrals to domincorp@gmail.com.</p><br/>  
-        <form id="contact-form" method="post" action="dreams/php/contact.php" role="form">
+        <form id="contact-form" method="post" action="<?= $_SERVER'PHP_SELF']; ?>" role="form">
             <div class="messages"></div>
             <div class="controls">
                 <div class="row">
@@ -112,7 +113,7 @@
 </div> <!-- /.row-->
 
 </div> <!-- /.container-->
-
+<!-- php -->
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="validator.js"></script>
