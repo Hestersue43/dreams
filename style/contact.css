@@ -140,3 +140,6 @@ margin-bottom: 20px;
 color:aliceblue;
 background: linear-gradient(#ee82ee, #753a88);
 }
+.error{
+color:red;
+}
