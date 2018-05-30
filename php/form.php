@@ -45,9 +45,23 @@ if (!preg_match("/^(\d[\s-]?)?[\(\[s-]{0,2}?\d{3}[\)\]\s-]{0,2} ?\d{3}[\-]?\d{4}
 if (empty($_POST["message"])){
  $message = "";
 } else {
-$phone = test_input($_POST["message"]);
+ $message = test_input($_POST["message"]);
   }
 }
+
+if ($name_error == '' and $surname == '' and $email == '' and  $phone == ''){
+	  $messag_body = '';
+	  unset($_POST['submit']);
+	  foreach ($_POST as $key => $value){
+		  $message_body .= "$key: $value\n";
+	  }
+	   $to = 'veldamart@gmail.com';
+	   $subject = 'Contact form Submit';
+	   if(mail($to, $subject, $message)){
+		  $success = "Message sent, thank you for contacting us!";
+    $name = $surname  = $email = $phone = $message = " ";		  
+	   }
+	  }
 
 function test_input($data) {
  $data = trim($data);
