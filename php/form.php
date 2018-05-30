@@ -10,7 +10,7 @@ if (empty($_POST["name"])){
  $name_error = "Name is required";
 } else {
 $name = test_input($_POST["name"]);
-if(!preg_match("/^[a-ZA-Z]*$/",$name)){
+if(!preg_match("/^[a-zA-Z]*$/",$name)){
   $name_error = "Only letters and white space allowed";
   }
 }
@@ -19,7 +19,7 @@ if (empty($_POST["surname"])){
  $surname_error = "Last Name is required";
 } else {
 $surname = test_input($_POST["surname"]);
-if (!preg_match("/^[a-ZA-Z]*$/" ,$surname)){
+if (!preg_match("/^[a-zA-Z]*$/" ,$surname)){
   $surname_error = "Only letters and white space allowed";
   }
 }
