@@ -1,0 +1,32 @@
+user]
+        email = you@yourprovider.com
+        name = The name you want showing up in commits
+
+[core]
+        editor = vi
+
+[push]
+        default = current
+
+[color]
+        ui = auto
+
+[diff]
+        renames = true
+
+[alias]
+        ci = commit
+        co = checkout
+        st = status
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+        pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = yourname@gmail.com
+	smtpServerPort = 587
