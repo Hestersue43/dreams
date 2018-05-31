@@ -42,23 +42,23 @@ if (empty($_POST["message"])){
   }
 }
 if ($name_error == '' and $surname == '' and $email == '' and  $phone == ''){
-	  $messag_body = '';
-	  unset($_POST['submit']);
-	  foreach ($_POST as $key => $value){
-		  $message_body .= "$key: $value\n";
-	  }
-	   $to = 'veldamart@gmail.com';
-	   $subject = 'Contact form Submit';
-	   if(mail($to, $subject, $message)){
-		  $success = "Message sent, thank you for contacting us!";
-    $name = $surname  = $email = $phone = $message = " ";		  
-	   }
-	  }
-function test_input($data) {
+ $messag_body = '';
+ unset($_POST['submit']);
+ foreach ($_POST as $key => $value){
+ $message_body .= "$key: $value\n";
+ }
+ $to = 'veldamart@gmail.com';
+ $subject = 'Contact form Submit';
+if(mail($to, $subject, $message)){
+ $success = "Message sent, thank you for contacting us!";
+ $name = $surname  = $email = $phone = $message = " ";		  
+  }
+ }
+ function test_input($data) {
  $data = trim($data);
  $data = stripslashes($data);
  $data = htmlspecialchars($data);
  return $data;
-}
+ }
 
 ?>
