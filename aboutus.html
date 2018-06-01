@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="c:user/velda/desktop/menu/style.css">
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript">
 		function openNav() {
@@ -13,108 +14,123 @@
 		} 
 	</script>
 	<style> 
-	    *{
-	 margin:0px;
-	 padding 0px;
-	 }
-	* {
-	font-family:sans-serif;
-	list-style:none;
-	}
-	header{
-	height: 75px;
-	margin: 0;
-	width:100%;						     
-	font-size:1.5em;
-	padding:0px 0 10px 5px;
-	background: linear-gradient(#ee82ee, #753a88);
-	color:#fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-    }
-	body {
-	width: 100%;
-	height: 100%;
-	font-size:17px;
-	background-color: #ffffff;
-	position: absolute;
-	top: 0;
-	bottom: 0;	   
-	}
-	.sidenav {
-	height: 100%; 
-	width: 0; 
-	position: fixed; 
-	z-index: 1; 
-	top: 0px; 
-	left: 0;
-	background: linear-gradient(#ee82ee, #753a88);					     
-	overflow-x: hidden; 
-	padding-top: 60px; 
-	transition: 0.5s; 
-	}
-				
-	.sidenav a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #fff;
-	display: block;
-	transition: 0.3s;
-	}
-	.sidenav a:hover a:active{
-	background-color: #b284be;
-	color: #ffff;
-	}
-	.sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	right: 35px;
-	font-size: 36px;
-	margin-left: 50px;
-	}
-	.border-menu {
-	 position: relative;
-	 padding-left: 1.25em;
-	}
-	.border-menu:before {
-	content: "";
-	position: absolute;
-	top: 0.25em;
-	left: 0;
-	width: 1em;
-	height: 0.125em;
-	border-top: 0.375em double #000;
-	border-bottom: 0.125em solid #000;
-	}
-	button.cbtn {
-	margin-left: 15%;
-	}
-	.container {
-	width: 100%;
-	font-size:1.0em;
-	 margin: 0 auto;
-	 color:#000;
-	 }
-		 
-	 button.cbtn {
-	margin-left: 15%;
-	}
-	.cbtn {
-	margin: auto;
-	width: 40%;
+			
+			*{
+				margin:0px;
+				padding 0px;
+				font-size: 1em;
+			 }
+			  
+			* {
+			  font-family:sans-serif;
+			  list-style:none;
+			  }
+		  
+			  header{
+			  height: 75px;
+			  margin: 0;
+			  font-size:1.5em;
+			  padding:0px 0 10px 5px;
+			  background: linear-gradient(#ee82ee, #753a88);
+			  color:#fff;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  text-align: center;
+			} 
+			h2 {
+		    display: block;
+		    font-size: 1.5em;
+		    -webkit-margin-before: 0.83em;
+		    -webkit-margin-after: 0.83em;
+		    -webkit-margin-start: 0px;
+		    -webkit-margin-end: 0px;
+		    font-weight: bold;
+		}
+		  
+			.container {
+			
+			 width: 75%;
+			 font-size:16px;
+			 margin: 0 auto;
+			 color:#000;
+			}		  
+	  
+		  .sidenav {
+			height: 100%; 
+			width: 0; 
+			position: fixed; 
+			z-index: 1; 
+			top: 0px; 
+			left: 0;
+			background: linear-gradient(#ee82ee, #753a88);
+			overflow-x: hidden; 
+			padding-top: 60px; 
+			transition: 0.5s; 
+			}
+			
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #fff;
+			display: block;
+			transition: 0.3s;
+			}
+		.sidenav a:hover a:active{
+		 background-color: #b284be;
+		 color: #ffff;
+		}
+		.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 35px;
+			font-size: 36px;
+			margin-left: 50px;
+			}
+			
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 18px;}
+				}
+			
+		.border-menu {
+		  position: relative;
+		  padding-left: 1.25em;
+			}
+		.border-menu:before {
+		  content: "";
+		  position: absolute;
+		  top: 0.25em;
+		  left: 0;
+		  width: 1em;
+		  height: 0.125em;
+		  border-top: 0.375em double #000;
+		  border-bottom: 0.125em solid #000;
+			}
+					
+		Ul li {
+		list-style-type: square;
+		margin: 0;
+		padding: 0;
+		}
+		.btn{
+	margin:auto;
+	width:40%;
 	border-radius: 10px;
 	border: none;
 	padding: 10px 20px;
-	color: aliceblue;
+	color:aliceblue;
 	background: linear-gradient(#ee82ee, #753a88);
-	text-align: center;
-	}		
-	</style>
+	text-align: center;	   
+	}
+	button.btn{
+	margin-left: 20%;	   
+	}	
+	</style>	
+
 	</head>
-    <body>
+      <body>
 	<header><h2>About Us</h2></header>
 	<span onclick="openNav()"> 
 	<i class="fa fa-align-justify" style="font-size:36px; color:#753a88; margin-left:15px">&nbsp;Menu</i></span>
