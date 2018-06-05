@@ -25,7 +25,9 @@
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
     } 
-    </script>
+   function CloseWindow() {
+    window.parent.close();
+   }
    <style>
     *{
 	 margin:0px;
@@ -147,9 +149,7 @@
 	<a href="services.html">Our Services</a>
 	<a href="calendarmenu.html">Donate Page</a>
 	<a href="contact.html">Contact Us</a>
-	<form method ="post">		      
-	<input type="button" class="cbtn" value = "closeExit" onclick="window.close()">
-	</form>					   
+	<button class="cbtn" onclick="CloseWindow()">Exit</button>
 	</div>
 	<br>
 	<!-- Start of Card Deck Layout -->
