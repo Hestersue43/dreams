@@ -17,6 +17,16 @@ top: 0;
 bottom: 0;	   
 background: url("images/women.jpg") repeat;
 }
+header{
+  text-align: center;
+   color: white;
+    background: linear-gradient(#ee82ee, #753a88);
+    position: relative;
+    zoom: 1;
+    width: 100% !important;
+    z-index: 6000;
+    padding: 20px 0 20px;
+    }
 
 .bg { 
 * The image used */
