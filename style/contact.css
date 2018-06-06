@@ -117,12 +117,10 @@ background: linear-gradient(#ee82ee, #753a88);
 text-align: center;
 }
 .footer {
-position: absolute;	
 color: white;
 text-align: center;
 bottom: 0;	
 background: linear-gradient(#ee82ee, #753a88);
-width: 100%;
 }
 
 /*contact*/
