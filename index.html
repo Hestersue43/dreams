@@ -149,12 +149,16 @@
 	<a href="calendarmenu.html">Donate Page</a>
 	<a href="contact.html">Contact Us</a>
 	<form>	
-	<button class="cbtn" onclick="CloseWindow()">Exit</button>
+	<button class="cbtn" onclick="return quitBox('quit');">Exit</button>
 	</form>	
 	<script>
-	function CloseWindow() {
-	window.close();
-	}
+	function quitBox(cmd)
+	{   
+    	if (cmd=='quit')
+    	{
+        open(location, '_self').close();
+    	}   
+   	 return false;
 	</script>	
 	</div>
 	<br>
