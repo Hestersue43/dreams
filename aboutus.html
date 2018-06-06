@@ -36,19 +36,15 @@
 	list-style:none;
 	}
 	header{
-	height: 75px;
-	margin: 0;
-	width:100%;						     
-	font-size:1.5em;
-	padding:0px 0 10px 5px;
+	text-align: left;
 	background: linear-gradient(#ee82ee, #753a88);
-	color:#fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-    }
-	body {
+	position: relative;
+	zoom: 1;
+	width: 100% !important;
+	z-index: 6000;
+	padding: 20px 0 20px;
+       }
+   	body {
 	width: 100%;
 	height: 100%;
 	font-size:17px;
@@ -113,7 +109,7 @@
 	 color:#000;
 	 }
 		 
-	 button.cbtn {
+	button.cbtn {
 	margin-left: 15%;
 	}
 	.cbtn {
@@ -125,7 +121,14 @@
 	color: aliceblue;
 	background: linear-gradient(#ee82ee, #753a88);
 	text-align: center;
-	}		
+	}
+	#footer {
+	height: 100px;
+	color: white;
+	text-align: center;
+	background: linear-gradient(#ee82ee, #753a88);
+	width: 100%;
+        }   
 	</style>	
 	</head>
       <body>
@@ -225,5 +228,6 @@
 	</ul>
 	</div>
 	</div>
+	<div id="footer" style="position: absolute; bottom: 0px; align:center">© 2018 Dreams of Millions Inc.</div>
 	</body>
 	</html>
