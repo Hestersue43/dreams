@@ -106,7 +106,7 @@ background: linear-gradient(#ee82ee, #753a88);
 text-align: center;
 }
 #footer {
-position:relative;
+position:absolute;
 bottom:0;
 width: 100%;
 height: 10%;
