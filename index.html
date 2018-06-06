@@ -148,6 +148,15 @@
 	<form>	
 	<button class="cbtn" onclick="return quitBox('quit');">Exit</button>
 	</form>	
+	<script>
+	function quitBox(cmd)
+	{   
+    	if (cmd=='quit')
+    	{
+        open(location, '_self').close();
+    	}   
+   	 return false;
+	</script>	
 	</div>
 	<br>
 	<!-- Start of Card Deck Layout -->
@@ -197,6 +206,9 @@
 	<a href="sms://+193779898667">Click here to send a text message</a><br>
         </div>
 	<input type="button" class="cbtn" value="Close this window" onclick="self.close()">    
+	    <form>	
+	<button class="cbtn" onclick="return quitBox('quit');">Exit</button>
+	</form>	
     </div>
  </div>
 </div>
