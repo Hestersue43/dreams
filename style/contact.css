@@ -122,6 +122,14 @@ margin-bottom: 20px;
 color:aliceblue;
 background: linear-gradient(#ee82ee, #753a88);
 }
+.btn-reset {
+font-weight: 300;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+margin-bottom: 20px;
+color:aliceblue;
+background: linear-gradient(#ee82ee, #753a88);
+}
 .error{
 color:red;
 }
