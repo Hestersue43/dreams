@@ -52,7 +52,7 @@
         I have successfully helped hundreds of clients achieve their personal and career goals in the Greene County Markets. 
         Accountability, professionalism and customer satisfaction are the cornerstones of my consulting business. Our goal is to create raving fans out of every client we work with!
         Your referrals are the lifeblood of my business. You can email your referrals to domincorp@gmail.com.</p><br/>  
-        <form name="contact-form" action="mailto:veldamart@gmail.com" method="post" enctype="text/html">
+        <form id="contact-form" action="mailto:veldamart@gmail.com" method="post" enctype="text/html">
          <div class="messages"></div>
          <div class="controls">
                 <div class="row">
@@ -98,14 +98,14 @@
                     <div class="col-md-2">
                    <input type="submit" id="submit" class="btn btn-success btn-send" value="Send" onClick="function submitForm()">
            <script>
-           function submitForm() {
-           {  
-           var frm = document.getElementsByName('contact-form')[0];
-           frm.submit(); // Submit the form
-           frm.reset();  // Reset all form data
-           return false; // Prevent page refresh
-           }
-           </script>
+          window.onload = submitForm() {
+          document.getElementById('submit').onclick = function() {
+          document.getElementById('contact-form').submit();
+          frm.reset();     
+          return false;
+          };
+           };    
+         </script>
            </div>
                 </div>
                 <div class="row">
