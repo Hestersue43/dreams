@@ -125,8 +125,21 @@
  <br/>
   <script>        
     function ClearFields() {
-     document.getElementById("form_name").value = "";
-     document.getElementById("form_lastname").value = "";
+        var name = form.name;
+        var lastname = form.lastname;
+        var email = form.email;
+        var phone = form.phone;
+        var message = form.message;
+       
+   if (isNotEmpty(name)) && (isNotEmpty(lastname))&& (isNotEmpty(email)) &&(isNotEmpty(phone)) && (isNotEmpty(message)){
+    return true;
+   } else {
+       
+   document.getElementById("form_name").value = "";
+   document.getElementById("form_lastname").value = "";
+  document.getElementById("form_email").value = "";
+  document.getElementById("form_phone").value = "";
+  document.getElementById("form_message").value = "";
 }   
  </script>     
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
