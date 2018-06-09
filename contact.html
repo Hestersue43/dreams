@@ -96,12 +96,12 @@
                     </div>
                     </div>
                     <div class="col-md-2">
-                   <input type="submit" class="btn btn-success btn-send" value="Send" onClick="this.form.reset()" />
+                   <input type="submit" id="submit" class="btn btn-success btn-send" value="Send" onClick="this.form.reset()" />
            <script>
-           this.form.rese()
+           this.form.reset()
            {  
            var frm = document.getElementsByName('contact-form')[0];
-           frm.btn btn-success btn-send(); // Submit the form
+           frm.submit(); // Submit the form
            frm.reset();  // Reset all form data
            return false; // Prevent page refresh
            }
