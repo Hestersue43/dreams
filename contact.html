@@ -52,7 +52,7 @@
         I have successfully helped hundreds of clients achieve their personal and career goals in the Greene County Markets. 
         Accountability, professionalism and customer satisfaction are the cornerstones of my consulting business. Our goal is to create raving fans out of every client we work with!
         Your referrals are the lifeblood of my business. You can email your referrals to domincorp@gmail.com.</p><br/>  
-        <form action="mailto:veldamart@gmail.com? " method="post" enctype="text/html">
+        <form name="contact-form" action="mailto:veldamart@gmail.com" method="post" enctype="text/html">
          <div class="messages"></div>
          <div class="controls">
                 <div class="row">
@@ -98,13 +98,12 @@
                     <div class="col-md-2">
                    <input type="submit" class="btn btn-success btn-send" value="Send" onClick="this.form.reset()" />
            <script>
-          this.form.rese()
+           this.form.rese()
            {  
-           document.getElementById('form-name').value = "";
-           document.getElementById('form-lastname').value = "";
-           document.getElementById('form-email').value = "";
-           document.getElementById('form-phone').value = "";
-           document.getElementById('form-message').value = "";
+           var frm = document.getElementsByName('contact-form')[0];
+           frm.btn btn-success btn-send(); // Submit the form
+           frm.reset();  // Reset all form data
+           return false; // Prevent page refresh
            }
            </script>
            </div>
@@ -123,25 +122,6 @@
  <br/><br/>    
 <br/><br/>
  <br/>
-  <script>        
-    function ClearFields() {
-        var name = form.name;
-        var lastname = form.lastname;
-        var email = form.email;
-        var phone = form.phone;
-        var message = form.message;
-       
-   if (isNotEmpty(name)) && (isNotEmpty(lastname))&& (isNotEmpty(email)) &&(isNotEmpty(phone)) && (isNotEmpty(message)){
-    return true;
-   } else {
-       
-   document.getElementById("form_name").value = "";
-   document.getElementById("form_lastname").value = "";
-  document.getElementById("form_email").value = "";
-  document.getElementById("form_phone").value = "";
-  document.getElementById("form_message").value = "";
-}   
- </script>     
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="validator.js"></script>
