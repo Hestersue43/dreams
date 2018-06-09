@@ -96,9 +96,9 @@
                     </div>
                     </div>
                     <div class="col-md-2">
-                   <input type="submit" id="submit" class="btn btn-success btn-send" value="Send" onClick="this.form.reset()" />
+                   <input type="submit" id="submit" class="btn btn-success btn-send" value="Send" onClick="function submitForm()">
            <script>
-           this.form.reset()
+           function submitForm() {
            {  
            var frm = document.getElementsByName('contact-form')[0];
            frm.submit(); // Submit the form
