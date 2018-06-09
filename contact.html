@@ -101,12 +101,8 @@
           window.onload = submitForm() {
           document.getElementById('submit').onclick = function() {
           document.getElementById('contact-form').submit();
-          document.getElementById('name').value = "";
-          document.getElementById('lastname').value = "";   
-          document.getElementById('email').value = "";
-          document.getElementById('phone').value = "";
-          document.getElementById('message').value = "";   
-          return false;
+          document.getElementById("contact-form").reset();    
+          return true;
           };
           }; 
          </script>
