@@ -97,7 +97,7 @@
                     </div>
                     <div class="col-md-12">
                         <input type="submit" class="btn btn-success btn-send" value="Send message">
-                        <input type="reset" value="Reset">
+                        <input type="reset" class="btn btn-success value="Reset">
                    </div>
                 </div>
                 <div class="row">
@@ -113,7 +113,13 @@
 <br/><br/>
  <br/><br/>    
 <br/><br/>
- <br/> 
+ <br/>
+  <script>        
+    function ClearFields() {
+     document.getElementById("form_name").value = "";
+     document.getElementById("form_lastname").value = "";
+}   
+ </script>     
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="validator.js"></script>
