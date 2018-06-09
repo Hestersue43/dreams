@@ -101,19 +101,15 @@
           window.onload = submitForm() {
           document.getElementById('submit').onclick = function() {
           document.getElementById('contact-form').submit();
+          document.getElementById('name').value = "";
+          document.getElementById('lastname').value = "";   
+          document.getElementById('email').value = "";
+          document.getElementById('phone').value = "";
+          document.getElementById('message').value = "";   
           return false;
-          clearfield();  
           };
           }; 
-         function clearField() {
-         if(document.getElementById) {
-         document.contact-form.name.value = "";
-         document.contact-form.lastname.value = "";
-         document.contact-form.phone.value = "";
-         document.contact-form.message.value = "";
-        }
-
-        </script>
+         </script>
            </div>
                 </div>
                 <div class="row">
