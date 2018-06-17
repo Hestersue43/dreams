@@ -114,25 +114,51 @@
 	 margin: 0 auto;
 	 color:#000;
 	 }
-	section {
-        background-image: url("https://images.unsplash.com/photo-1525772197928-dcc58355a295?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1e57e4cf5b1441eb8a2b6693f29e242f&auto=format&fit=crop&w=500&q=60");
-        background-repeat: no-repeat center top;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-	}
 	
+	.main {
+	background-image: url(https://images.unsplash.com/photo-1508145052393-b0328a3ab751?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6f2e3292544788452be6272bd88df57a&auto=format&fit=crop&w=500&q=60);
+	background-repeat: no-repeat center top;
+	background-size: cover; 
+	min-height: 100%;
+	}
+	#clients{
+        background-color: white;
+	min-height: 100%;
+	}
+	#topBtn {
+	display: none;
+	position: relative;
+	bottom: -80px;
+	left: 50%;
+	z-index: 99;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	background: linear-gradient(#ee82ee, #753a88);
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+	}
+	#topBtn:hover {
+        background-color: #555;
+	}
 	#footer {
 	position: relative; 
 	height: 10%;	   
 	bottom: 0px;
-        color: white;
-        text-align: center;
-        background: linear-gradient(#ee82ee, #753a88);
-        width: 100%;
-        }		
+	color: white;
+	text-align: center;
+	background: linear-gradient(#ee82ee, #753a88);
+	width: 100%;
+	}		
 	</style>
-	 </head>
+	<script>
+	$('.trigger, .slider').click(function() {
+        $('.slider').toggleClass('close');
+	});
+        </script>	   
+	</head>
 	<body>
         <header><h2>Dream Teams</h2></header>
 	<span onclick="openNav()"> 
@@ -152,8 +178,11 @@
 	<a href="http://google.com" >Exit this Window</a>
 	</div>
 	<br><br> 
-	<section>
-	</section>			   
+	<h2><center><a href="#clients" >What Do We</a></center></h2>
+	<div class="main">
+        <section><section> 
+	</div>
+	<div class="main">			   
 	<div class="row">			   
         <div class="container">
 	    <h4 style="text-align:center"><p><b><u>What Participants Do</u></b></p></h4>
@@ -168,13 +197,47 @@
 		<li><b>Stratgeic Planing:</b> Brainstorm new ideas for marking products and services at Dreams of Millions, Inc:</li><br>
 		<li><b>Meet with Care Source about job initiatives (life coach):</b> For those who are eligible.</li><br>
 		</ul>
+		</section>
+	        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>			 
 		</div>
+	        </div>
 		<br><br>
 		<center>
 		</div>
-	</center>
-	<br><br>
-	</body>
+	        </center>
+	        <br><br>
+	        </body>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		   if (this.hash !== "") {
+			 event.preventDefault();
+			var hash = this.hash;
+
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 1000, function(){
+			  window.location.hash = hash;
+		   
+			  });
+			} 
+		  });
+		});
+	</script>
+	<script>
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	document.getElementById("topBtn").style.display = "block";
+	} else {
+	document.getElementById("Btopn").style.display = "none";
+	}
+	}
+	function topFunction() {
+	document.body.scrollTop = 0; 
+	document.documentElement.scrollTop = 0; 
+	}
+	</script>							     
 	<div id="footer" >© 2018 Dreams of Millions Inc.</div>									  
 	</html>
 
